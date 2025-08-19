@@ -15,6 +15,7 @@ def login():
         data={
             "username": os.environ["NSSCTF_USERNAME"],
             "password": os.environ["NSSCTF_PASSWORD"],
+            "remember": 0
         },
     )
     cookies = dict(resp.cookies)
